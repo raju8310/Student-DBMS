@@ -44,7 +44,7 @@ pipeline {
             }
             steps {
                 echo "Stopping and Removing Containers..."
-                sh 'docker compose down'
+                sh 'docker-compose down'
                 sh 'docker image prune -af'
             }
         }
